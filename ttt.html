@@ -1,0 +1,72 @@
+<head>
+<meta charset="UTF-8">   
+  <!-- jQuery library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <!-- BOOTSTRAP -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    
+  <!-- Internal Files -->
+  <link rel="stylesheet" type="text/css" href="ttt.css">
+  <script src="ttt.js"></script>
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div id="text">
+      <div id="name">
+        <div>Tic-</div>
+        <div>&nbsp;&nbsp;&nbsp;Tac-</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Toe</div>
+      </div>
+      <div id="selector">
+        Do you want to play as X or O ? <br>(X always goes first)
+        <div>
+          <label class="radio-inline"><input type="radio" name="XorO" value="x" checked="checked"><i class="fa fa-times"></i></label>
+          <label class="radio-inline"><input type="radio" name="XorO" value="o"><i class="fa fa-circle-o"></i></label>
+        </div>
+      </div>
+    </div>
+
+    <div id="game">
+      <div id="top">
+        <div id="a1" class="box left"></div>
+        <div id="a2" class="box middle"></div>
+        <div id="a3" class="box right"></div>
+      </div>
+      <div id="middle">
+        <div id="b1" class="box left"></div>
+        <div id="b2" class="box middle"></div>
+        <div id="b3" class="box right"></div>
+      </div>
+      <div id="bottom">
+        <div id="c1" class="box left"></div>
+        <div id="c2" class="box middle"></div>
+        <div id="c3" class="box right"></div>
+      </div>
+    </div>
+
+    <div id="scoreboard">
+      <ul class='list-inline'>
+        <li>
+          <p>Wins</p>
+          <p id="wins"></p>
+        </li>
+        <li><p>Losses</p>
+          <p id="losses"></p>
+        </li>
+        <li>
+          <p>Draws</p>
+          <p id="draws"></p>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+</body>

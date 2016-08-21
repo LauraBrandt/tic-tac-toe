@@ -1,0 +1,99 @@
+$color: #ddd;
+
+body {
+  background:#222;
+  background-image: url("wild_oliva_background.png"); /* from subtlepatterns.com */
+}
+
+.container-fluid {
+  position:relative;
+  left:-10px;
+  width: 810px; //830
+  padding:0;
+  margin:40px auto;
+}
+
+#text {
+  display:inline-block;
+  margin-top:20px;
+  float:left;
+  color:$color;
+  #name {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size:70px;
+    div {
+      margin-bottom:-15px;
+    }
+  } 
+  #selector {
+    padding-top:50px;
+    font-family:'Raleway', sans-serif;
+    text-align:center;
+    font-size:16px;
+    div {
+      padding-top:5px;
+      .fa-times {
+        font-size:19px;
+      }
+      .fa-circle-o {
+        font-weight:bold;
+      }
+    }
+  }
+}
+
+#game {
+  display:inline-block;
+  float:right;
+  margin-left: 50px;
+  .box {
+    display:inline-block;
+    margin:-2px;
+    width:140px;  //150
+    height:140px; //150
+    border:3px solid $color;
+  }
+  .left {
+    border-left:0;
+  }
+  .right {
+    border-right:0;
+  }
+}
+
+#top .box {
+  border-top:0;
+}
+#bottom .box {
+  border-bottom:0;
+}
+
+#top, #middle, #bottom {
+  margin:-1px auto;
+}
+
+.box img {
+  display:block;
+  margin:23px;
+  height:90px;
+  width:90px;
+}
+
+#scoreboard {
+  color:$color;
+  clear:both;
+  margin:auto;
+  position:relative;
+  left:-67px;
+  padding-top:20px;
+  width:350px;
+  font-family:'Raleway', sans-serif;
+  text-align:center;
+  font-size:23px;
+  li {
+    width:100px;
+    p {
+      margin:0;
+    }
+  }
+}
